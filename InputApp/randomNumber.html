@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Input App</title>
+    <script type="text/javascript">
+        function compare_175()
+        {
+          var numberRandom_175 = Math.floor(Math.random()*10)+1;
+          var numberGuess_175 = Number(document.getElementById('numberUser'));
+          if (numberRandom_175 == numberGuess_175) {
+            document.getElementById('result').innerHTML = 'The random number is ' + numberRandom_175 + ' so, Good Work!';
+          }
+          else{
+            document.getElementById('result').innerHTML = 'The random number is ' + numberRandom_175 + ' so, Not Matched!';
+          }
+        }
+    </script>
+  </head>
+  <body>
+    <b>Jessica Alvarez</b> - C0839175 <br><br>
+    Please, enter a Number to compare with a random generated number:
+    <input type="text" name="numberUser" id="numberUser" value=""><br><br>
+    <button type="button" name="buttonCompare" id="buttonCompare" onClick="compare_175()">Compare</button><br><br>
+
+    <div id="result"> The result is: </div>
+  </body>
+</html>

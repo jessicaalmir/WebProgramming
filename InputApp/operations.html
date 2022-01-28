@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Operations App</title>
+    <script type="text/javascript">
+        function multiply_175()
+        {
+          var numberUser1_175 = Number(document.getElementById('numberUser1').value);
+          var numberUser2_175 = Number(document.getElementById('numberUser2').value);
+          var result_175 = (numberUser1_175 * numberUser2_175);
+          document.getElementById('result').innerHTML = 'The result is: ' + result_175;
+        }
+        function divide_175()
+        {
+          var numberUser1_175 = Number(document.getElementById('numberUser1').value);
+          var numberUser2_175 = Number(document.getElementById('numberUser2').value);
+          var result_175 = numberUser1_175 / numberUser2_175;
+          document.getElementById('result').innerHTML = 'The result is: \n' + result_175;
+        }
+    </script>
+  </head>
+  <body>
+    <b>Jessica Alvarez</b> - C0839175 <br><br>
+    1st Number: <input type="text" name="numberUser1" id="numberUser1" value=""><br>
+    2nd Number: <input type="text" name="numberUser2" id="numberUser2" value=""><br>
+    <button type="button" name="buttonMultiply" id="buttonMultiply" onClick="multiply_175()">Multiply</button> <button type="button" name="buttonDivide" id="buttonDivide" onClick="divide_175()">Divide</button><br><br>
+
+    <div id="result">  </div>
+  </body>
+</html>
